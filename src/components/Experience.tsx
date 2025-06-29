@@ -1,4 +1,6 @@
 
+import { Button } from '@/components/ui/button';
+
 const Experience = () => {
   const experiences = [
     {
