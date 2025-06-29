@@ -1,6 +1,7 @@
 
 import { ExternalLink, Github } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 
 const Projects = () => {
   const projects = [
@@ -42,7 +43,15 @@ const Projects = () => {
         <div className="text-center mb-16">
           <h2 className="text-sm text-gray-400 tracking-wider uppercase mb-4">RECENT PROJECTS</h2>
           <h3 className="text-4xl sm:text-6xl font-bold mb-8">Projects Catalogue</h3>
-          <p className="text-gray-400 text-lg">A collection of my proof of work</p>
+          <p className="text-gray-400 text-lg mb-8">A collection of my proof of work</p>
+          <Link to="/projects">
+            <Button 
+              variant="outline"
+              className="bg-gray-800/50 border-gray-700 text-white hover:bg-gray-700 hover:border-gray-600 rounded-full px-6"
+            >
+              View All Projects →
+            </Button>
+          </Link>
         </div>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
