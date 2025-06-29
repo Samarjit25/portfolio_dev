@@ -1,119 +1,178 @@
-
+import { useEffect } from 'react';
 import { ExternalLink, Github } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Navigation from '@/components/Navigation';
 import { Link } from 'react-router-dom';
 
 const ProjectsPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const projects = [
     {
-      title: 'Layers Landing page',
-      subtitle: 'Animated Landing page',
-      description: 'Landing page for a SaaS, with interactive Animations made using Tailwind CSS and Framer motion',
-      category: 'SAAS LANDING PAGE',
-      technologies: ['React', 'Tailwind', 'Framer Motion'],
-      image: '/lovable-uploads/29fb3e12-7607-49c0-b770-58b0d15b3a33.png',
-      liveUrl: '#',
-      githubUrl: '#'
+      title: 'Kartly',
+      subtitle: 'Next-Gen Online Storefront',
+      description:
+        'Developed a full-stack retail platform with optimized real-time checkout and inventory systems, enhancing user engagement and reducing cart abandonment.',
+      category: 'Website',
+      technologies: ['React.js', 'TailwindCSS', 'Firebase'],
+      image: 'https://res.cloudinary.com/dz2mlxltd/image/upload/v1751199676/8e7fc704c70d51c97ad92927e224f060_enjmav.jpg',
+      liveUrl: 'https://kartly-634f2.web.app/',
+      githubUrl: 'https://github.com/Samarjit25/kartly',
     },
     {
-      title: 'GhostType',
-      subtitle: 'Seamless Typing Site',
-      description: 'A sleek and minimalistic typing test app designed to enhance your typing speed and accuracy with real-time performance tracking and dynamic leaderboard.',
-      category: 'WEB APP',
-      technologies: ['React.js', 'Tailwind', 'Appwrite'],
-      image: '/lovable-uploads/0e5f7c08-4646-462f-b275-96e98674bbd7.png',
-      liveUrl: '#',
-      githubUrl: '#'
+      title: 'Luxeco',
+      subtitle: 'Interactive Fashion Booking Portal',
+      description:
+        'Engineered a responsive platform with enhanced catalog and reservation systems, improving user experience, engagement, and operational efficiency.',
+      category: 'Website',
+      technologies: ['React.js', 'Node.js', 'Express.js', 'MongoDB'],
+      image: 'https://res.cloudinary.com/dz2mlxltd/image/upload/v1751199531/246fb33c6fb75c96333ef8e75e491870_twiixs.jpg',
+      liveUrl: 'https://luxeeco-fashion.netlify.app/',
+      githubUrl: 'https://github.com/Samarjit25/Luxeco-Website',
     },
     {
-      title: 'Simon Says Game',
-      subtitle: 'Interactive Memory Game',
-      description: 'A interactive memory game with features that also include a leaderboard with 400+ users',
-      category: 'WEBSITE',
-      technologies: ['HTML', 'CSS', 'Javascript'],
-      image: '/lovable-uploads/fde30ec7-73ad-44cc-a8be-39c9ec7b313e.png',
-      liveUrl: '#',
-      githubUrl: '#'
-    }
+      title: 'Signify',
+      subtitle: 'Interactive eSignature Website',
+      description:
+        'A lightweight e-signature platform that allows users to draw and instantly download their signatures as PNG files.',
+      category: 'Website',
+      technologies: ['HTML', 'CSS', 'Javascript', 'Canvas'],
+      image: 'https://res.cloudinary.com/dz2mlxltd/image/upload/v1751199668/5dbac67f29f715d0f15e4349711d9338_gbznhb.jpg',
+      liveUrl: 'https://samarjit25.github.io/Signify/',
+      githubUrl: 'https://github.com/Samarjit25/Signify',
+    },
+    {
+      title: 'Bookie',
+      subtitle: 'Book Recommendation System',
+      description:
+        'Built using Python and machine learning that suggests books based on user preferences, ratings, and similarity scores. Includes a simple interface for searching and exploring recommended titles.',
+      category: 'ML Model',
+      technologies: ['Python', 'Numpy', 'Pandas', 'Seaborn'],
+      image: 'https://res.cloudinary.com/dz2mlxltd/image/upload/v1751199133/12f63c50463ee4aff545850bb26aa732_ityfxe.jpg',
+      liveUrl: 'https://github.com/Samarjit25/Book-recommendation',
+      githubUrl: 'https://github.com/Samarjit25/Book-recommendation',
+    },
+    {
+      title: 'NotifyMe',
+      subtitle: 'Reminder system',
+      description:
+        'Mini project that works as a simple reminder system where users can set custom messages and times, and a dialog box pops up to notify them at the scheduled moment.',
+      category: 'Python software',
+      technologies: ['Python', 'tkinter', 'plyer'],
+      image: 'https://res.cloudinary.com/dz2mlxltd/image/upload/v1751199192/6ab53b881771f74222f3cc21b5965c0a_gjnw0a.jpg',
+      liveUrl: 'https://github.com/Samarjit25/Notify_Me/',
+      githubUrl: 'https://github.com/Samarjit25/Notify_Me/',
+    },
+    {
+      title: 'Weather App',
+      subtitle: 'Website',
+      description:
+        'A sleek weather app that fetches real-time weather data using the OpenWeatherMap API and displays temperature, humidity, and conditions.',
+      category: 'Website',
+      technologies: ['HTML', 'CSS', 'Javascript', 'OpenWeatherMap API'],
+      image: 'https://res.cloudinary.com/dz2mlxltd/image/upload/v1751199146/d5272910c4ccacfc46b2072dd1817ca4_ysd9cg.jpg',
+      liveUrl: 'https://samarjit25.github.io/Signify/',
+      githubUrl: 'https://github.com/Samarjit25/Signify',
+    },
   ];
 
-  return (
+ return (
     <div className="min-h-screen bg-black">
       <Navigation />
       <section className="pt-24 pb-20 bg-black text-white px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <Link 
-              to="/"
-              className="inline-flex items-center text-gray-400 hover:text-white mb-8 transition-colors"
+          <div className="flex flex-col items-center text-center mb-16">
+  <Link 
+    to="/"
+    className="inline-flex items-center text-gray-400 hover:text-white mb-6 transition-colors"
+  >
+    ← Back to Home
+  </Link>
+
+  <h1 className="inline-block text-4xl sm:text-6xl font-medium tracking-tight leading-tight pb-[4px] mb-4 bg-gradient-to-b from-white to-gray-700 bg-clip-text text-transparent">
+    All Projects
+  </h1>
+
+  <p className="text-white-400 text-lg">Complete collection of my work</p>
+</div>
+
+          {/* Projects Grid */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
+          {projects.map((project, index) => (
+            <div
+              key={project.title}
+              className="group bg-gray-900/30 backdrop-blur-sm border border-gray-800 rounded-2xl overflow-hidden hover:border-gray-600 transition-all duration-500 hover:scale-[1.02] animate-fade-in"
+              style={{ animationDelay: `${index * 0.1}s` }}
             >
-              ← Back to Home
-            </Link>
-            <h1 className="text-4xl sm:text-6xl font-bold mb-8">All Projects</h1>
-            <p className="text-gray-400 text-lg">Complete collection of my work</p>
-          </div>
-          
-          <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
-            {projects.map((project, index) => (
-              <div
-                key={project.title}
-                className="group bg-gray-900/30 backdrop-blur-sm border border-gray-800 rounded-2xl overflow-hidden hover:border-gray-600 transition-all duration-500 hover:scale-[1.02] animate-fade-in"
-                style={{animationDelay: `${index * 0.1}s`}}
-              >
-                <div className="aspect-video bg-gradient-to-br from-blue-600 to-purple-600 relative overflow-hidden">
-                  <div className="absolute inset-0 bg-black/20"></div>
-                  <div className="absolute bottom-4 left-4">
-                    <h4 className="text-white font-bold text-xl">{project.title}</h4>
-                    <p className="text-gray-200 text-sm">{project.subtitle}</p>
-                  </div>
+              {/* Image Section */}
+              <div className="aspect-video relative overflow-hidden">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="object-cover w-full h-full"
+                  loading="lazy"
+                />
+              </div>
+
+              {/* Content Section */}
+              <div className="p-6">
+                <div className="mb-4">
+                  <span className="text-xs text-gray-500 tracking-wider uppercase">
+                    {project.category}
+                  </span>
+                  <h4 className="text-xl font-bold text-white mt-1">{project.title}</h4>
+                  <p className="text-sm text-gray-400 mb-2">{project.subtitle}</p>
+                  <p className="text-gray-400 text-sm leading-relaxed">{project.description}</p>
                 </div>
-                
-                <div className="p-6">
-                  <div className="mb-4">
-                    <span className="text-xs text-gray-500 tracking-wider uppercase">
-                      {project.category}
+
+                <div className="flex flex-wrap gap-2 mb-6">
+                  {project.technologies.map((tech) => (
+                    <span
+                      key={tech}
+                      className="px-3 py-1 bg-gray-800/50 border border-gray-700 rounded-full text-xs text-gray-300"
+                    >
+                      {tech}
                     </span>
-                    <h4 className="text-xl font-bold text-white mt-1 mb-3">
-                      {project.title}
-                    </h4>
-                    <p className="text-gray-400 text-sm leading-relaxed">
-                      {project.description}
-                    </p>
-                  </div>
-                  
-                  <div className="flex flex-wrap gap-2 mb-6">
-                    {project.technologies.map((tech) => (
-                      <span
-                        key={tech}
-                        className="px-3 py-1 bg-gray-800/50 border border-gray-700 rounded-full text-xs text-gray-300"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-                  
-                  <div className="flex gap-3">
+                  ))}
+                </div>
+
+                <div className="flex gap-3">
+                  <a
+                    href={project.liveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1"
+                  >
                     <Button
                       variant="outline"
                       size="sm"
-                      className="flex-1 bg-gray-800/50 border-gray-700 text-white hover:bg-gray-700 hover:border-gray-600"
+                      className="w-full bg-gray-800/50 border border-gray-700 text-white transition-all duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 hover:bg-gray-100 hover:text-black hover:border-gray-300"
                     >
                       <ExternalLink size={16} className="mr-2" />
                       Live Site
                     </Button>
+                  </a>
+                  <a
+                    href={project.githubUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1"
+                  >
                     <Button
                       variant="outline"
                       size="sm"
-                      className="flex-1 bg-gray-800/50 border-gray-700 text-white hover:bg-gray-700 hover:border-gray-600"
+                      className="w-full bg-gray-800/50 border border-gray-700 text-white transition-all duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 hover:bg-gray-100 hover:text-black hover:border-gray-300"
                     >
                       <Github size={16} className="mr-2" />
                       GitHub
                     </Button>
-                  </div>
+                  </a>
                 </div>
               </div>
-            ))}
+            </div>
+          ))}
+          
           </div>
         </div>
       </section>
