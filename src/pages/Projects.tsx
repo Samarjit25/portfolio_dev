@@ -10,6 +10,17 @@ const ProjectsPage = () => {
   }, []);
   const projects = [
     {
+      title: 'SummarIQ',
+      subtitle: 'SaaS Landing Page',
+      description:
+        'SaaS Landing page for a tool that integrates with Zoom and Google Meet to generate meeting summaries and extract actionable tasks automatically',
+      category: 'Website',
+      technologies: ['Next','Typescript', 'FramerMotion'],
+      image: 'https://res.cloudinary.com/dz2mlxltd/image/upload/v1751256552/Screenshot_2025-06-30_093804_iphfnb.png',
+      liveUrl: 'https://summariq-landing.vercel.app/',
+      githubUrl: 'https://github.com/Samarjit25/SummarIQ-landing',
+    },
+    {
       title: 'Kartly',
       subtitle: 'Next-Gen Online Storefront',
       description:
@@ -42,17 +53,7 @@ const ProjectsPage = () => {
       liveUrl: 'https://samarjit25.github.io/Signify/',
       githubUrl: 'https://github.com/Samarjit25/Signify',
     },
-    {
-      title: 'Bookie',
-      subtitle: 'Book Recommendation System',
-      description:
-        'Built using Python and machine learning that suggests books based on user preferences, ratings, and similarity scores. Includes a simple interface for searching and exploring recommended titles.',
-      category: 'ML Model',
-      technologies: ['Python', 'Numpy', 'Pandas', 'Seaborn'],
-      image: 'https://res.cloudinary.com/dz2mlxltd/image/upload/v1751199133/12f63c50463ee4aff545850bb26aa732_ityfxe.jpg',
-      liveUrl: 'https://github.com/Samarjit25/Book-recommendation',
-      githubUrl: 'https://github.com/Samarjit25/Book-recommendation',
-    },
+    
     {
       title: 'NotifyMe',
       subtitle: 'Reminder system',

@@ -5,13 +5,24 @@ import { Link } from 'react-router-dom';
 const Projects = () => {
   const projects = [
     {
+      title: 'SummarIQ',
+      subtitle: 'SaaS Landing Page',
+      description:
+        'SaaS Landing page for a tool that integrates with Zoom and Google Meet to generate meeting summaries and extract actionable tasks automatically',
+      category: 'Website',
+      technologies: ['Next','Typescript', 'FramerMotion'],
+      image: 'https://res.cloudinary.com/dz2mlxltd/image/upload/v1751256552/Screenshot_2025-06-30_093804_iphfnb.png',
+      liveUrl: 'https://summariq-landing.vercel.app/',
+      githubUrl: 'https://github.com/Samarjit25/SummarIQ-landing',
+    },
+    {
       title: 'Kartly',
       subtitle: 'Next-Gen Online Storefront',
       description:
         'Developed a full-stack retail platform with optimized real-time checkout and inventory systems, enhancing user engagement and reducing cart abandonment.',
       category: 'Website',
       technologies: ['React.js', 'TailwindCSS', 'Firebase'],
-      image: 'https://res.cloudinary.com/dz2mlxltd/image/upload/v1751182616/d04fd14bd493f5ac56e62b0a6c14410c_xm0enh.jpg',
+      image: 'https://res.cloudinary.com/dz2mlxltd/image/upload/v1751199676/8e7fc704c70d51c97ad92927e224f060_enjmav.jpg',
       liveUrl: 'https://kartly-634f2.web.app/',
       githubUrl: 'https://github.com/Samarjit25/kartly',
     },
@@ -22,21 +33,11 @@ const Projects = () => {
         'Engineered a responsive platform with enhanced catalog and reservation systems, improving user experience, engagement, and operational efficiency.',
       category: 'Website',
       technologies: ['React.js', 'Node.js', 'Express.js', 'MongoDB'],
-      image: 'https://res.cloudinary.com/dz2mlxltd/image/upload/v1742308736/Screenshot_2025-02-21_152851_2_lnjrmp.png',
+      image: 'https://res.cloudinary.com/dz2mlxltd/image/upload/v1751199531/246fb33c6fb75c96333ef8e75e491870_twiixs.jpg',
       liveUrl: 'https://luxeeco-fashion.netlify.app/',
       githubUrl: 'https://github.com/Samarjit25/Luxeco-Website',
     },
-    {
-      title: 'Signify',
-      subtitle: 'Interactive eSignature Website',
-      description:
-        'A lightweight e-signature platform that allows users to draw and instantly download their signatures as PNG files.',
-      category: 'Website',
-      technologies: ['HTML', 'CSS', 'Javascript', 'Canvas'],
-      image: 'https://res.cloudinary.com/dz2mlxltd/image/upload/v1751182752/04373510a18fffb1cb2ba2e7478bde1a_h2ncma.jpg',
-      liveUrl: 'https://samarjit25.github.io/Signify/',
-      githubUrl: 'https://github.com/Samarjit25/Signify',
-    },
+    
   ];
 
   return (
