@@ -10,7 +10,7 @@ const Projects = () => {
       description:
         'SaaS Landing page for a tool that integrates with Zoom and Google Meet to generate meeting summaries and extract actionable tasks automatically',
       category: 'Website',
-      technologies: ['Next','Typescript', 'FramerMotion'],
+      technologies: ['Next','Typescript', 'FramerMotion', 'TailwindCSS'],
       image: 'https://res.cloudinary.com/dz2mlxltd/image/upload/v1751256552/Screenshot_2025-06-30_093804_iphfnb.png',
       liveUrl: 'https://summariq-landing.vercel.app/',
       githubUrl: 'https://github.com/Samarjit25/SummarIQ-landing',
@@ -22,7 +22,7 @@ const Projects = () => {
         'Developed a full-stack retail platform with optimized real-time checkout and inventory systems, enhancing user engagement and reducing cart abandonment.',
       category: 'Website',
       technologies: ['React.js', 'TailwindCSS', 'Firebase'],
-      image: 'https://res.cloudinary.com/dz2mlxltd/image/upload/v1751299221/Screenshot_2025-06-30_103454_wyv2qx.png',
+      image: 'https://res.cloudinary.com/dz2mlxltd/image/upload/v1751615202/Screenshot_2025-07-04_131629_vutuz8.png',
       liveUrl: 'https://kartly-634f2.web.app/',
       githubUrl: 'https://github.com/Samarjit25/kartly',
     },
@@ -32,9 +32,9 @@ const Projects = () => {
       description:
         'Engineered a responsive platform with enhanced catalog and reservation systems, improving user experience, engagement, and operational efficiency.',
       category: 'Website',
-      technologies: ['React.js', 'Node.js', 'Express.js', 'MongoDB'],
-      image: 'https://res.cloudinary.com/dz2mlxltd/image/upload/v1751299228/Screenshot_2025-06-30_212908_fejiqc.png',
-      liveUrl: 'https://luxeeco-fashion.netlify.app/',
+      technologies: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'TailwindCSS'],
+      image: 'https://res.cloudinary.com/dz2mlxltd/image/upload/v1751614994/Screenshot_2025-07-03_204450_adbkfy.png',
+      liveUrl: 'https://luxeco-website.vercel.app/',
       githubUrl: 'https://github.com/Samarjit25/Luxeco-Website',
     },
     
