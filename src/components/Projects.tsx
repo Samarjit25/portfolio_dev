@@ -10,7 +10,7 @@ const Projects = () => {
       description:
         'SaaS Landing page for a tool that integrates with Zoom and Google Meet to generate meeting summaries and extract actionable tasks automatically',
       category: 'Website',
-      technologies: ['Next','Typescript', 'FramerMotion', 'TailwindCSS'],
+      technologies: ['Next','Typescript', 'FramerMotion'],
       image: 'https://res.cloudinary.com/dz2mlxltd/image/upload/v1751256552/Screenshot_2025-06-30_093804_iphfnb.png',
       liveUrl: 'https://summariq-landing.vercel.app/',
       githubUrl: 'https://github.com/Samarjit25/SummarIQ-landing',
@@ -32,7 +32,7 @@ const Projects = () => {
       description:
         'Engineered a responsive platform with enhanced catalog and reservation systems, improving user experience, engagement, and operational efficiency.',
       category: 'Website',
-      technologies: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'TailwindCSS'],
+      technologies: ['React.js', 'Node.js', 'Express.js', 'MongoDB'],
       image: 'https://res.cloudinary.com/dz2mlxltd/image/upload/v1751614994/Screenshot_2025-07-03_204450_adbkfy.png',
       liveUrl: 'https://luxeco-website.vercel.app/',
       githubUrl: 'https://github.com/Samarjit25/Luxeco-Website',
