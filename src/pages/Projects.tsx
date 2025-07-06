@@ -50,8 +50,8 @@ const ProjectsPage = () => {
       category: 'Website',
       technologies: ['HTML', 'CSS', 'Javascript', 'Canvas'],
       image: 'https://res.cloudinary.com/dz2mlxltd/image/upload/v1751690620/Eversign-Electronic-Signatures-Featured_radnqf.avif',
-      liveUrl: 'https://samarjit25.github.io/Signify/',
-      githubUrl: 'https://github.com/Samarjit25/Signify',
+      liveUrl: 'https://samarjit25.github.io/signify/',
+      githubUrl: 'https://github.com/Samarjit25/signify',
     },
     
     {
