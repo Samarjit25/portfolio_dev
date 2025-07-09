@@ -101,5 +101,10 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    cursor: url('https://res.cloudinary.com/dz2mlxltd/raw/upload/v1752046583/Move_czws1l.cur') 0 0, auto;
+  }
+
+  a, button {
+    cursor: url('https://res.cloudinary.com/dz2mlxltd/raw/upload/v1752046502/Link_xiozth.cur') 0 0, pointer;
   }
 }
